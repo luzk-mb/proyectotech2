@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban_Fashion</title>
-    <!-- iconos-->
-    <link rel="apple-touch-icon" href="assets/img/">
-    <!-- css-->
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-     <link rel="stylesheet" href="assets/css/templatemo.css">
-     <link rel="stylesheet" href="assets/css/custom.css">
-     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Urban Fashion - Moda Urbana para todos los gustos. Compra las últimas tendencias en ropa y accesorios." />
+    <title>Urban Fashion - Productos</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/templatemo.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
+    
 </head>
 <body>
-    <!-- inicio encabezado-->
+
+    <!-- Inicio del encabezado -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
@@ -29,229 +34,195 @@
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                 </div>
             </div>
+        </div>
+    </nav>
+    <!-- Fin encabezado -->
+
+    <!-- Inicio menú -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">Urban Fashion</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acercade.html">Quienes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="compras.html">Compras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
     </nav>
-    <!-- fin encabezado-->
-     <!-- inicio menu-->
-     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                Urban_Fashion
-            </a>
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="opciones">
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="acercade.html">A cerca de</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="compras.html">Compras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+    <!-- Fin menú de navegación -->
 
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar align-self-center d-flex">
-                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
-                        <div class="input-group-text">
-                            <i class="fa fa-fw fa-search"></i>
-                        </div>
-                    </div>
-                </div>
-                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
-                </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                    <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+9</span>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</nav>
-<!-- fin menu-->
-<!-- Modal -->
-<div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="w-100 pt-1 mb-5 text-right">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form action="" method="get" class="modal-content modal-body border-0 p-0">
-            <div class="input-group mb-2">
-                <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Buscar ...">
-                <button type="submit" class="input-group-text bg-success text-light">
-                    <i class="fa fa-fw fa-search text-white"></i>
-                </button>
-                
-            </div>
-            <p><br>Escriba el producto a Buscar ...</p>
-        </form>
-    </div>
-</div>
- <!-- inicio secciones-->
-<!-- carrusel -->
-<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="assets/img/Vestier.jpg" alt="Logo">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left align-self-center">
-                            <h1 class="h1 text-success"><b>Urban Fashion</b> eCommerce</h1>
-                            <h3 class="h2">La tienda de ropa para damas, caballeros y niños...</h3>
-                            <p>
-                                Urban Fashion Ventas y comercialización de ropa online..<a rel="sponsored" class="text-success" href="#" target="_blank">Tienda</a> website. 
-                                Image credits go to <a rel="sponsored" class="text-success" href="#" target="_blank">Freepik Stories</a>,
-                                <a rel="sponsored" class="text-success" href="#" target="_blank">Unsplash</a> and
-                                <a rel="sponsored" class="text-success" href="#" target="_blank">Icons 8</a>.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="assets/img/Accesorios.jpg" alt="">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h1">Accesorios</h1>
-                            <h3 class="h2">Línea de accesorios de la tienda.</h3>
-                            <p>
-                                
-                                 <strong></strong> 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="assets/img/category_img_02.jpg" alt="">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h1">Top de Marca</h1>
-                            <h3 class="h2">Las mejores marcas de ropa. </h3>
-                            <p>
-                                 
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
-        <i class="fas fa-chevron-left"></i>
-    </a>
-    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
-        <i class="fas fa-chevron-right"></i>
-    </a>
-</div>
-<!-- fin carrusel -->
-  <!--Seccion-->
-    <section class="container py-5">
-        <div class="row text-center pt-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">Promociones del mes...</h1>
-                <p>
-                    Estos son los articulos mas vendidos del mes de octubre....
-                </p>
-            </div>
-        </div>
+    <!-- Cuerpo -->
+    <!-- Contenedor de Producto -->
+<section class="bg-light">
+    <div class="container pb-5">
         <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"> </a>
-                <h5 class="text-center mt-3 mb-3">Blusas...</h5>
-                <p class="text-center"><a class="btn btn-success" href="compras.html">Ir a Tienda</a></p>
+            <!-- Imagen Principal -->
+            <div class="col-lg-5 mt-5">
+                <div class="card mb-3">
+                    <img class="card-img img-fluid" src="assets/img/logo.png" alt="Imagen producto" id="main-product-img">
+                </div>
+                <div class="row">
+                    <!-- Carrusel de Miniaturas -->
+                    <div class="col-1 align-self-center">
+                        <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                            <i class="text-dark fas fa-chevron-left"></i>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                    </div>
+                    <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                        <div class="carousel-inner product-links-wap" role="listbox">
+                            <!-- Imágenes del Producto -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Caballero/Buso2.jpg" alt="Camisa Manga Larga Vinotinto" data-desc="Suéter de Punto Clásico a Rayas para Hombre - Tejido Suave de Estiramiento Medio, Cuello Redondo, Manga Larga, Detalles de Punto Canalé, Lavable a Máquina - Perfecto para Salidas Informales de Primavera y Otoño" data-price=" Cop 130.000" data-stock="10"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Damas/blusa1.jpg" alt="Blusa Blanca" data-desc="Blusa Elegante sin Mangas con Estampado Completo - Poliéster, Lavable a Máquina - Perfecta para Primavera y Verano" data-price=" Cop 90.000" data-stock="15"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Accesorios/gorra2.jpg" alt="Gorra Azul" data-desc="Gorra de Béisbol de Malla Transpirable - Ajustable, Sombrero Ligero para Deportes al Aire Libre y Uso Casual" data-price=" Cop 50.000" data-stock="8"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Accesorios/pulsera1.jpg" alt="Pulsera Dama" data-desc="Pulsera Tricolor Con Tres Combinaciones De Corazón De Amor" data-price=" Cop 35.000" data-stock="8"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Damas/blusa2.jpg" alt="Blusa Verde" data-desc="Blusa de Color Sólido Vibrante con Cuello en V - Sin Mangas, Detalle de Botón, Diseño de Dobladillo, Cómoda, Ajuste Relajado, Perfecta para Primavera y Verano - Ropa Casual para Mujer para Uso Diario." data-price=" Cop 110.000" data-stock="10"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Caballero/Buso1.jpg" alt="Camisa Manga Larga Blanco$Azul" data-desc="Camiseta de manga larga para hombre con cuello redondo, bloques de color, punto texturizado, casual, cómoda, moderna." data-price=" Cop 100.000" data-stock="8"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Caballero/bermuda1.jpg" alt="Bermuda Jean" data-desc="Pantalones cortos de mezclilla desgastados de inspiración vintage para hombre, bermuda vaquera casual de longitud media con detalles lavados, tela de algodón sin estiramiento, color sólido, ajuste regular para el verano." data-price=" Cop 95.000" data-stock="8"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Accesorios/gorra1.jpg" alt="Gorra Negra" data-desc="Gorra de Béisbol Unisex Transpirable de Malla con Estilo y Patrón de Bandera Americana - Ideal para Viajes en Primavera y Otoño, Actividades al Aire Libre." data-price=" Cop 60.000" data-stock="8"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Accesorios/pulsera2.jpg" alt="Pulsera Hombre" data-desc="Pulsera para Hombre de Cuero Marrón Vintage a la Moda - Diseño Multicapa con Cuentas de Piedra, Brazalete de Acero Inoxidable Antioxidante, Ajustable y Elegante" data-price=" Cop 90.000" data-stock="20"></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#"><img class="card-img img-fluid" src="assets/img/Caballero/pantalon1.jpg" alt="Pantalon Caqui" data-desc="Pantalones de carga sólidos para hombre con múltiples bolsillos, pantalones informales con cordón para actividades al aire libre" data-price=" Cop 130.000" data-stock="12"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 align-self-center">
+                        <a href="#multi-item-example" role="button" data-bs-slide="next">
+                            <i class="text-dark fas fa-chevron-right"></i>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"> </a>
-                <h5 class="text-center mt-3 mb-3">Pantalones...</h5>
-                <p class="text-center"><a class="btn btn-success" href="compras.html">Ir a Tienda</a></p>
-            </div>
-        
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"> </a>
-                <h5 class="text-center mt-3 mb-3">Bermudas...</h5>
-                <p class="text-center"><a class="btn btn-success" href="compras.html">Ir a Tienda</a></p>
+
+            <!-- Detalles del Producto -->
+            <div class="col-lg-7 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="h2" id="product-name">Elige, compra y disfruta con Urban Fashion...</h1>
+                        <p class="h3 py-2" id="product-price"></p> <!-- Aquí será el precio dinámico -->
+                        <p class="py-2" id="product-description">Descripción del producto...</p> <!-- Descripción dinámica -->
+                        <p class="py-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            <span class="list-inline-item text-dark">Rating 4.8 | 40 Comentarios</span>
+                        </p>
+
+                        <h6>Especificación:</h6>
+                        <ul class="list-unstyled pb-3">
+                            <li>Todas las marcas</li>
+                        </ul>
+
+                        <form action="" method="GET">
+                            <input type="hidden" name="product-title" value="Activewear">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <ul class="list-inline pb-3">
+                                        <li class="list-inline-item">Tallas :
+                                            <input type="hidden" name="product-size" id="product-size" value="S">
+                                        </li>
+                                        <li class="list-inline-item"><span class="btn btn-success btn-size">S</span></li>
+                                        <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                        <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="list-inline pb-3">
+                                        <li class="list-inline-item text-right">
+                                            Cantidad
+                                            <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                                        </li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                        <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                                        <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row pb-3">
+                                <div class="col d-grid">
+                                    <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
+    <!-- Fin cuerpo -->
 
-    </section>
-     <!-- fin secciones-->
-      
-    <!-- inicio de pie-->
+    <!-- Pie de página -->
     <footer class="bg-dark" id="templatemo_footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light log">Urban Fashion</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light">Urban Fashion</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fas fa-map-market-alt fa-fw"></i>
-                            Local principal - Barranquilla - Colombia
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 057-304-217-19-28">057-304-217-19-28</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope mx-2"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@urbanfashion.com">info@urbanfashion.com</a>
-                        </li>
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Local Principal - Barranquilla - Colombia</li>
+                        <li><i class="fa fa-phone fa-fw"></i><a class="navbar-sm-brand text-light text-decoration-none" href="tel:057-316-715-6710">057-316-715-6710</a></li>
+                        <li><i class="fa fa-envelope mx-2"></i><a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@urbanfashion.com">info@urbanfashion.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">camisas</a></li>
-                        <li><a class="text-decoration-none" href="#">Blusas</a></li>
-                        <li><a class="text-decoration-none" href="#">jeans</a></li>
-                        <li><a class="text-decoration-none" href="#">Bermudas</a></li>
-                        <li><a class="text-decoration-none" href="#">Playeras</a></li>
-                        <li><a class="text-decoration-none" href="#">Gafas</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Camisas</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Blusas</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Jeans</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Bermudas</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Playeras</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Gafas</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Mas información</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="index.html">Home</a></li>
                         <li><a class="text-decoration-none" href="acercade.html">Quienes Somos</a></li>
                         <li><a class="text-decoration-none" href="compras.html">Compras</a></li>
-                        <li><a class="text-decoration-none" href="contacto.html">Contactos</a></li>
+                        <li><a class="text-decoration-none" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -263,7 +234,7 @@
             <div class="col-auto me-auto">
                 <ul class="list-inline text-left footer-icons">
                     <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        <a class="text-light text-decoration-none" target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                     </li>
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
@@ -271,7 +242,6 @@
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
                     </li>
-                    
                 </ul>
             </div>
             <div class="col-auto">
@@ -282,24 +252,24 @@
                 </div>
             </div>            
         </div>
-    </div>
         <div class="text-light text-center mt-4">
             <div class="container">
                 <div class="row pt-2">
-                    <p class="text-left text-light">
-                        Copyright &copy; 2024 - urbanfashion | Diseñado por: Leonel Manjarres & Luz Mejia</p>
-                    </p>
+                    <p class="text-left text-light">Copyright &copy; 2024 - urbanfashion | Diseñado por: Leonel Manjarres Luz Mejia</p>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- fin de pie-->
-<!-- archivos js-->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="assets/js/jquery-1.11.0.min.js"></script>
-<script src="assets/js/templatemo.js"></script>
-<script src="assets/js/custom.js"></script>
+    <!-- Fin pie de página -->
+
+    <!-- Archivos JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/produd.destacados.js"></script>
+
 
 </body>
 </html>
